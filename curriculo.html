@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
+</head>
+<style>
+    body{
+        display: flex;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        color: whitesmoke;
+        background-color: #494848;
+    }   
+    h2{
+        color: #ffb700;
+        text-shadow: 1px 1px 1px #5e4300;
+    }
+    .parte_esquerda{
+        display: block;
+        width: 30%;
+        height: 100%;
+        margin: 0px;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        border-right: 5px solid white;
+    }
+
+    .foto{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 10px;
+    }
+    .foto img{
+        width: 300px;
+        object-fit: cover;
+        border-radius: 200px 200px 200px 200px;
+        margin: 20px;
+        border: 7px solid #ffb700;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skills{
+        display: block;
+        align-items: center;
+        justify-content: baseline;
+        margin: 30px;
+        margin-bottom: 50px;
+    }
+    .py_area{
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+    }
+    .skills #caixa_python{
+        width: 60%;
+        height: 15px;
+        border: 1px solid gray;
+        margin-right: 20px;
+    }
+    #py_level{
+        background-color: whitesmoke;
+        width: 40%;
+        height: 15px;
+    }
+    .js_area{
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+    }
+    .skills #caixa_js{
+        width: 60%;
+        height: 15px;
+        border: 1px solid gray;
+        margin-right: 20px;
+    }
+    #js_level{
+        background-color: whitesmoke;
+        width: 20%;
+        height: 15px;
+    }
+    .html_area{
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+    }
+    .skills #caixa_html{
+        width: 60%;
+        height: 15px;
+        border: 1px solid gray;
+        margin-right: 20px;
+    }
+    #html_level{
+        background-color: whitesmoke;
+        width: 80%;
+        height: 15px;
+    }
+    .css_area{
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+    }
+    .skills #caixa_css{
+        width: 60%;
+        height: 15px;
+        border: 1px solid gray;
+        margin-right: 20px;
+    }
+    #css_level{
+        background-color: whitesmoke;
+        width: 80%;
+        height: 15px;
+    }
+    .java_area{
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+    }
+    .skills #caixa_java{
+        width: 60%;
+        height: 15px;
+        border: 1px solid gray;
+        margin-right: 20px;
+    }
+    #java_level{
+        background-color: whitesmoke;
+        width: 60%;
+        height: 15px;
+    }
+
+    .parte_direita{
+        display: block;
+        width: 70%;
+        height: 100%;
+        margin: 0px;
+    }
+    
+    .academico{
+        display: block;
+        margin: 20px;
+        margin-right: 40px;
+        margin-top: 50px;
+        align-items: center;
+        justify-content: baseline;
+        background-color: #5e5c5c;
+        padding: 20px;
+        border-radius: 10px 10px;
+        box-shadow: 1px 1px 30px 2px rgb(0, 0, 0);
+        border: 2px solid whitesmoke;
+    }
+    .academico li{
+        list-style: none;
+    }
+    
+    .profissional{
+        display: block;
+        margin: 20px;
+        margin-right: 40px;
+        margin-top: 50px;
+        align-items: center;
+        justify-content: baseline;
+        background-color: #5e5c5c;
+        padding: 20px;
+        border-radius: 10px 10px;
+        box-shadow: 1px 1px 30px 2px rgb(0, 0, 0);
+        border: 2px solid whitesmoke;
+    }
+    .profissional li{
+        list-style: none;
+    }
+    
+    .projetos{
+        display: block;
+        margin: 20px;
+        margin-right: 40px;
+        margin-top: 50px;
+        align-items: center;
+        justify-content: baseline;
+        background-color: #5e5c5c;
+        padding: 20px;
+        border-radius: 10px 10px;
+        box-shadow: 1px 1px 30px 2px rgb(0, 0, 0);
+        border: 2px solid whitesmoke;
+    }
+    .projetos ul{
+        list-style: none;
+        text-align: justify;
+        margin-right: 45px;
+    }
+    .projetos li{
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+    }
+    .projetos ul a{
+        color: rgb(191, 191, 238)
+        
+    }
+</style>
+<body>
+    <section class="parte_esquerda">
+        <article class="foto">
+            <img src="./WhatsApp Image 2025-05-16 at 13.41.31_copy.jpeg" alt="foto_de_perfil_JP">
+            <p>João Pedro Rodrigues Vilas Boas</p>
+            <p>rodriguesjoaopedro133@gmail.com</p>
+            <p>23 anos</p>
+            <p>Natércia-MG</p>
+        </article>
+        <article class="skills">
+            <h2>Skills</h2>
+
+            <p>Python</p>
+            <div class="py_area">
+                <div id="caixa_python"><div id="py_level"></div></div>
+                <scan>Nível 2</scan>
+            </div>
+            
+            <p>JavaScript</p>
+            <div class="js_area">
+                <div id="caixa_js"><div id="js_level"></div></div>
+                <scan>Nível 1</scan>
+            </div>
+
+            <p>Html</p>
+            <div class="html_area">
+                <div id="caixa_html"><div id="html_level"></div></div>
+                <scan>Nível 4</scan>
+            </div>
+
+            <p>Css</p>
+            <div class="css_area">
+                <div id="caixa_css"><div id="css_level"></div></div>
+                <scan>Nível 4</scan>
+            </div>
+
+            <p>Java</p>
+            <div class="java_area">
+                <div id="caixa_java"><div id="java_level"></div></div>
+                <scan>Nível 3</scan>
+            </div>
+        </article>
+    </section>
+
+    <section class="parte_direita">
+        <article class="academico">
+            <h2>Formação Acadêmica</h2>
+            <li>
+                <ul>Ensino Médio Completo, concluído em 2019, na Escola Estadual "João Goulart Santiago Brum".</ul>
+                <ul>Licenciatura em Geografia, concluído em 2023, pela Unifal-MG/UNICID.</ul>
+                <ul>Graduando em Sistemas de Informação, 3º período, na Universidade do Vale do Sapucaí.</ul>
+            </li>
+        </article>
+        <article class="profissional">
+            <h2>Experiências Profissionais</h2>
+            <li>
+                <ul>2023: Professor de Geografia, realizado na Escola Estadual "Antônio Carlos", em Conceição das Pedras-MG.</ul>
+                <ul>2024-atualmente: Professor de Robótica Educacional na Escola de Ensino Integral, da cidade de Natércia-MG.</ul>
+            </li>
+        </article>
+        <article class="projetos">
+            <h2>Projetos</h2>
+            <ul>
+                <li>1ª Feira de Jovem Empreendedor com Ênfase em Robótica do município de Natércia-MG, realizado em Outubro de 2024</li>
+                <li>Sistema de Gestão de Vendas, feito em Java, em fase de prototipagem, inicialmente utilizado com trabalho acadêmico. 
+                    O Sistema permite cadastrar usuários, produtos e aplicar descontos de acordo com a idade do cliente. <br>
+                    <scan>Link do Projeto: <a href="https://github.com/codeacutis/Sistema-de-Vendas">https://github.com/codeacutis/Sistema-de-Vendas</a></scan>
+                </li>
+            </ul>
+        </article>
+    </section>
+</body>
+</html>
