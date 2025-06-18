@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Currículo</title>
+    <title>Meu Currículo - João Pedro</title>
 </head>
 <style>
-    body{
+    body {
         display: flex;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         width: 100%;
@@ -14,12 +15,14 @@
         margin: 0px;
         color: whitesmoke;
         background-color: #494848;
-    }   
-    h2{
+    }
+
+    h2 {
         color: #ffb700;
         text-shadow: 1px 1px 1px #5e4300;
     }
-    .parte_esquerda{
+
+    .parte_esquerda {
         display: block;
         width: 30%;
         height: 100%;
@@ -30,15 +33,16 @@
         border-right: 5px solid white;
     }
 
-    .foto{
+    .foto {
         display: block;
         align-items: center;
         justify-content: center;
         text-align: center;
         margin: 10px;
     }
-    .foto img{
-        width: 300px;
+
+    .foto img {
+        width: 200px;
         max-width: 100%;
         height: auto;
         object-fit: cover;
@@ -50,102 +54,42 @@
         box-shadow: 1px 1px 30px 2px rgb(63, 63, 63);
     }
 
-    .skills{
+    .skills {
         display: block;
         align-items: center;
         justify-content: baseline;
         margin: 30px;
         margin-bottom: 50px;
     }
-    .py_area{
+
+    .nivel_area {
         display: flex;
         align-items: center;
         justify-content: baseline;
-    }
-    .skills #caixa_python{
-        width: 60%;
-        height: 15px;
-        border: 1px solid gray;
-        margin-right: 20px;
-    }
-    #py_level{
-        background-color: whitesmoke;
-        width: 40%;
-        height: 15px;
-    }
-    .js_area{
-        display: flex;
-        align-items: center;
-        justify-content: baseline;
-    }
-    .skills #caixa_js{
-        width: 60%;
-        height: 15px;
-        border: 1px solid gray;
-        margin-right: 20px;
-    }
-    #js_level{
-        background-color: whitesmoke;
-        width: 20%;
-        height: 15px;
-    }
-    .html_area{
-        display: flex;
-        align-items: center;
-        justify-content: baseline;
-    }
-    .skills #caixa_html{
-        width: 60%;
-        height: 15px;
-        border: 1px solid gray;
-        margin-right: 20px;
-    }
-    #html_level{
-        background-color: whitesmoke;
-        width: 80%;
-        height: 15px;
-    }
-    .css_area{
-        display: flex;
-        align-items: center;
-        justify-content: baseline;
-    }
-    .skills #caixa_css{
-        width: 60%;
-        height: 15px;
-        border: 1px solid gray;
-        margin-right: 20px;
-    }
-    #css_level{
-        background-color: whitesmoke;
-        width: 80%;
-        height: 15px;
-    }
-    .java_area{
-        display: flex;
-        align-items: center;
-        justify-content: baseline;
-    }
-    .skills #caixa_java{
-        width: 60%;
-        height: 15px;
-        border: 1px solid gray;
-        margin-right: 20px;
-    }
-    #java_level{
-        background-color: whitesmoke;
-        width: 60%;
-        height: 15px;
     }
 
-    .parte_direita{
+    .caixa_fundo {
+        width: 60%;
+        height: 15px;
+        border: 1px solid gray;
+        margin-right: 20px;
+        border-radius: 10px 10px;
+    }
+
+    .caixa_complemento {
+        background-color: whitesmoke;
+        height: 15px;
+        border-radius: 10px 10px;
+    }
+
+    .parte_direita {
         display: block;
         width: 70%;
         height: 100%;
         margin: 0px;
     }
-    
-    .academico{
+
+    .academico {
         display: block;
         margin: 20px;
         margin-right: 40px;
@@ -158,11 +102,12 @@
         box-shadow: 1px 1px 30px 2px rgb(0, 0, 0);
         border: 2px solid whitesmoke;
     }
-    .academico li{
+
+    .academico li {
         list-style: none;
     }
-    
-    .profissional{
+
+    .profissional {
         display: block;
         margin: 20px;
         margin-right: 40px;
@@ -175,11 +120,12 @@
         box-shadow: 1px 1px 30px 2px rgb(0, 0, 0);
         border: 2px solid whitesmoke;
     }
-    .profissional li{
+
+    .profissional li {
         list-style: none;
     }
-    
-    .projetos{
+
+    .projetos {
         display: block;
         margin: 20px;
         margin-right: 40px;
@@ -192,31 +138,35 @@
         box-shadow: 1px 1px 30px 2px rgb(0, 0, 0);
         border: 2px solid whitesmoke;
     }
-    .projetos ul{
+
+    .projetos ul {
         list-style: none;
         text-align: justify;
         margin-right: 45px;
     }
-    
-    li{
+
+    li {
         margin-bottom: 20px;
     }
-    .projetos ul a{
+
+    .projetos ul a {
         color: rgb(191, 191, 238)
-        
     }
 
-    .academico:hover, .profissional:hover, .projetos:hover{
+    .academico:hover,
+    .profissional:hover,
+    .projetos:hover {
         cursor: pointer;
         transform: scale(1.03);
         transition: 0.1s;
     }
 </style>
+
 <body>
     <section class="parte_esquerda">
         <article class="foto">
             <img src="./perfil_copy.jpeg" alt="foto de perfil de João Pedro Rodrigues Vilas Boas" loading="lazy">
-            <p><strong>João Pedro Rodrigues Vilas Boas</strong></p>
+            <h1>João Pedro Rodrigues Vilas Boas</h1>
             <p>rodriguesjoaopedro133@gmail.com</p>
             <p>23 anos</p>
             <p>Natércia-MG</p>
@@ -225,32 +175,42 @@
             <h2>Skills</h2>
 
             <p>Python</p>
-            <div class="py_area">
-                <div id="caixa_python"><div id="py_level"></div></div>
+            <div class="nivel_area">
+                <div class="caixa_fundo">
+                    <div class="caixa_complemento" , style="width: 40%"></div>
+                </div>
                 <span>Nível 2</span>
             </div>
-            
+
             <p>JavaScript</p>
-            <div class="js_area">
-                <div id="caixa_js"><div id="js_level"></div></div>
+            <div class="nivel_area">
+                <div class="caixa_fundo">
+                    <div class="caixa_complemento" , style="width: 20%"></div>
+                </div>
                 <span>Nível 1</span>
             </div>
 
             <p>Html</p>
-            <div class="html_area">
-                <div id="caixa_html"><div id="html_level"></div></div>
-                <span>Nível 4</span>
+            <div class="nivel_area">
+                <div class="caixa_fundo">
+                    <div class="caixa_complemento" , style="width: 60%"></div>
+                </div>
+                <span>Nível 3</span>
             </div>
 
             <p>Css</p>
-            <div class="css_area">
-                <div id="caixa_css"><div id="css_level"></div></div>
-                <span>Nível 4</span>
+            <div class="nivel_area">
+                <div class="caixa_fundo">
+                    <div class="caixa_complemento" , style="width: 60%"></div>
+                </div>
+                <span>Nível 3</span>
             </div>
 
             <p>Java</p>
-            <div class="java_area">
-                <div id="caixa_java"><div id="java_level"></div></div>
+            <div class="nivel_area">
+                <div class="caixa_fundo">
+                    <div class="caixa_complemento" , style="width: 60%"></div>
+                </div>
                 <span>Nível 3</span>
             </div>
         </article>
@@ -268,20 +228,28 @@
         <article class="profissional">
             <h2>Experiências Profissionais</h2>
             <ul>
-                <li>2023: Professor de Geografia, realizado na Escola Estadual "Antônio Carlos", em Conceição das Pedras-MG.</li>
-                <li>2024-atualmente: Professor de Robótica Educacional na Escola de Ensino Integral, da cidade de Natércia-MG.</li>
+                <li>2023: Professor de Geografia, realizado na Escola Estadual "Antônio Carlos", em Conceição das
+                    Pedras-MG.</li>
+                <li>2024-atualmente: Professor de Robótica Educacional na Escola de Ensino Integral, da cidade de
+                    Natércia-MG.</li>
             </ul>
         </article>
         <article class="projetos">
             <h2>Projetos</h2>
             <ul>
-                <li>1ª Feira de Jovem Empreendedor com Ênfase em Robótica do município de Natércia-MG, realizado em Outubro de 2024.</li>
-                <li>Sistema de Gestão de Vendas, feito em Java, em fase de prototipagem, inicialmente utilizado como trabalho acadêmico. 
-                    O Sistema permite cadastrar usuários, produtos e aplicar descontos de acordo com a idade do cliente. <br>
-                    <span>Link do Projeto: <a href="https://github.com/codeacutis/Sistema-de-Vendas">https://github.com/codeacutis/Sistema-de-Vendas</a></span>
+                <li>1ª Feira de Jovem Empreendedor com Ênfase em Robótica do município de Natércia-MG, realizado em
+                    Outubro de 2024. Foram desenvolvidos projetos de robótica educacional com alunos de 6 até 11 anos.
+                </li>
+                <li>Sistema de Gestão de Vendas, feito em Java, em fase de prototipagem, inicialmente utilizado como
+                    trabalho acadêmico.
+                    O Sistema permite cadastrar usuários, produtos e aplicar descontos de acordo com a idade do cliente.
+                    <br>
+                    <span>Link do Projeto: <a
+                            href="https://github.com/codeacutis/Sistema-de-Vendas">https://github.com/codeacutis/Sistema-de-Vendas</a></span>
                 </li>
             </ul>
         </article>
     </section>
 </body>
+
 </html>
