@@ -39,12 +39,15 @@
     }
     .foto img{
         width: 300px;
+        max-width: 100%;
+        height: auto;
         object-fit: cover;
         border-radius: 200px 200px 200px 200px;
         margin: 20px;
         border: 7px solid #ffb700;
         align-items: center;
         justify-content: center;
+        box-shadow: 1px 1px 30px 2px rgb(63, 63, 63);
     }
 
     .skills{
@@ -194,20 +197,26 @@
         text-align: justify;
         margin-right: 45px;
     }
-    .projetos li{
-        margin-bottom: 30px;
-        padding-bottom: 10px;
+    
+    li{
+        margin-bottom: 20px;
     }
     .projetos ul a{
         color: rgb(191, 191, 238)
         
     }
+
+    .academico:hover, .profissional:hover, .projetos:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: 0.1s;
+    }
 </style>
 <body>
     <section class="parte_esquerda">
         <article class="foto">
-            <img src="./WhatsApp Image 2025-05-16 at 13.41.31_copy.jpeg" alt="foto_de_perfil_JP">
-            <p>João Pedro Rodrigues Vilas Boas</p>
+            <img src="./perfil_copy.jpeg" alt="foto_de_perfil_JP" loading="lazy">
+            <p><strong>João Pedro Rodrigues Vilas Boas</strong></p>
             <p>rodriguesjoaopedro133@gmail.com</p>
             <p>23 anos</p>
             <p>Natércia-MG</p>
@@ -250,24 +259,24 @@
     <section class="parte_direita">
         <article class="academico">
             <h2>Formação Acadêmica</h2>
-            <li>
-                <ul>Ensino Médio Completo, concluído em 2019, na Escola Estadual "João Goulart Santiago Brum".</ul>
-                <ul>Licenciatura em Geografia, concluído em 2023, pela Unifal-MG/UNICID.</ul>
-                <ul>Graduando em Sistemas de Informação, 3º período, na Universidade do Vale do Sapucaí.</ul>
-            </li>
+            <ul>
+                <li>Ensino Médio Completo, concluído em 2019, na Escola Estadual "João Goulart Santiago Brum".</li>
+                <li>Licenciatura em Geografia, concluído em 2023, pela Unifal-MG/UNICID.</li>
+                <li>Graduando em Sistemas de Informação, 3º período, na Universidade do Vale do Sapucaí.</li>
+            </ul>
         </article>
         <article class="profissional">
             <h2>Experiências Profissionais</h2>
-            <li>
-                <ul>2023: Professor de Geografia, realizado na Escola Estadual "Antônio Carlos", em Conceição das Pedras-MG.</ul>
-                <ul>2024-atualmente: Professor de Robótica Educacional na Escola de Ensino Integral, da cidade de Natércia-MG.</ul>
-            </li>
+            <ul>
+                <li>2023: Professor de Geografia, realizado na Escola Estadual "Antônio Carlos", em Conceição das Pedras-MG.</li>
+                <li>2024-atualmente: Professor de Robótica Educacional na Escola de Ensino Integral, da cidade de Natércia-MG.</li>
+            </ul>
         </article>
         <article class="projetos">
             <h2>Projetos</h2>
             <ul>
-                <li>1ª Feira de Jovem Empreendedor com Ênfase em Robótica do município de Natércia-MG, realizado em Outubro de 2024</li>
-                <li>Sistema de Gestão de Vendas, feito em Java, em fase de prototipagem, inicialmente utilizado com trabalho acadêmico. 
+                <li>1ª Feira de Jovem Empreendedor com Ênfase em Robótica do município de Natércia-MG, realizado em Outubro de 2024.</li>
+                <li>Sistema de Gestão de Vendas, feito em Java, em fase de prototipagem, inicialmente utilizado como trabalho acadêmico. 
                     O Sistema permite cadastrar usuários, produtos e aplicar descontos de acordo com a idade do cliente. <br>
                     <scan>Link do Projeto: <a href="https://github.com/codeacutis/Sistema-de-Vendas">https://github.com/codeacutis/Sistema-de-Vendas</a></scan>
                 </li>
